@@ -1,6 +1,6 @@
 # Todo App 🚀
 
-A simple, Todo App built with **React**, **TypeScript**, and **TailwindCSSVite**.
+A simple Todo App built with **React**, **TypeScript**, and **TailwindCSSVite**.
 
 ## Features
 - ✅ Add tasks
