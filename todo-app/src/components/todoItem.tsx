@@ -1,0 +1,29 @@
+import React from "react";
+
+interface TodoItemProps {
+  todo: { id: number; text: string; completed: boolean };
+  toggleTodo: (id: number) => void;
+  deleteTodo: (id: number) => void;
+}
+
+const TodoItem: React.FC<TodoItemProps> = ({ todo, toggleTodo, deleteTodo }) => {
+  return (
+    <div
+      className={`flex justify-between items-center p-2 border-b ${
+        todo.completed ? "bg-green-200 line-through" : "bg-white"
+      }`}
+    >
+      <span onClick={() => toggleTodo(todo.id)} className="cursor-pointer">
+        {todo.text}
+      </span>
+      <button
+        onClick={() => deleteTodo(todo.id)}
+        className="text-red-500 hover:text-red-700"
+      >
+        ✖
+      </button>
+    </div>
+  );
+};
+
+export default TodoItem;
