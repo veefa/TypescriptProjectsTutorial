@@ -29,7 +29,7 @@ const App: React.FC = () => {
   };
 
   return (
-    <div className="bg-gray-100 p-4 min-h-screen">
+    <div className="bg-blue-100 p-4 min-h-screen">
       <h1 className="mb-4 font-bold text-3xl text-center">Todo App</h1>
       <TodoForm addTodo={addTodo} />
       <div className="space-y-2">

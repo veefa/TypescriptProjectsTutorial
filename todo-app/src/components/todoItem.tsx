@@ -9,8 +9,8 @@ interface TodoItemProps {
 const TodoItem: React.FC<TodoItemProps> = ({ todo, toggleTodo, deleteTodo }) => {
   return (
     <div
-      className={`flex justify-between items-center p-2 border-b ${
-        todo.completed ? "bg-green-200 line-through" : "bg-white"
+      className={`flex justify-between items-center p-2 border-b text-gray-600 bg-blue-200 ${
+        todo.completed ? "bg-green-600 line-through" : "bg-white"
       }`}
     >
       <span onClick={() => toggleTodo(todo.id)} className="cursor-pointer">
@@ -18,7 +18,7 @@ const TodoItem: React.FC<TodoItemProps> = ({ todo, toggleTodo, deleteTodo }) => 
       </span>
       <button
         onClick={() => deleteTodo(todo.id)}
-        className="text-red-500 hover:text-red-700"
+        className="text-red-400 hover:text-red-700"
       >
         ✖
       </button>
