@@ -4,10 +4,10 @@ import ExpenseList from "./components/ExpenseList";
 import { Expense } from "./types";
 
 const App: React.FC = () => {
-  const [expenses, setExpenses] = useState<Expense[]>([]);
+  const [expenses, setExpenses] = useState<Expense[]>([]);  //to store expenses
 
-  const addExpense = (expense: Expense) => {
-    setExpenses([...expenses, expense]);
+  const addExpense = (expense: Expense) => {   // add Expense to ExpenseForm
+    setExpenses([...expenses, expense]);      // expenses to ExpenseList
   };
 
   return (
