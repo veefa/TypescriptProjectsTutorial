@@ -11,8 +11,8 @@ const App: React.FC = () => {
   };
 
   return (
-    <div className="flex justify-center items-center bg-gray-100 min-h-screen">
-      <h1 className="font-bold text-3xl">Hello, World!</h1>
+    <div className="mx-auto p-4 max-w-2xl">
+      <h1 className="font-bold text-2xl text-center">Expense Tracker</h1>
       <ExpenseForm addExpense={addExpense} />
       <ExpenseList expenses={expenses} />
     </div>
