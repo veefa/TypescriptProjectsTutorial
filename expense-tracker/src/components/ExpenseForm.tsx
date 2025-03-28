@@ -31,29 +31,29 @@ const ExpenseForm: React.FC<ExpenseFormProps> = ({ addExpense }) => {
   };
 
   return (
-    <form onSubmit={handleSubmit} className="bg-white shadow p-4 rounded">
+    <form onSubmit={handleSubmit} className="flex flex-wrap items-center gap-2 bg-white shadow-md p-4 rounded-lg">
       <input
         type="text"
         placeholder="Expense Name"
         value={name}
         onChange={(e) => setName(e.target.value)}
-        className="mb-2 p-2 border w-full"
+        className="mb-2 p-2 border rounded w-full"
       />
       <input
         type="number"
         placeholder="Amount"
         value={amount}
         onChange={(e) => setAmount(Number(e.target.value))}
-        className="mb-2 p-2 border w-full"
+        className="mb-2 p-2 border rounded w-full"
       />
       <input
         type="text"
         placeholder="Category"
         value={category}
         onChange={(e) => setCategory(e.target.value)}
-        className="mb-2 p-2 border w-full"
+        className="mb-2 p-2 border rounded w-full"
       />
-      <button type="submit" className="bg-blue-500 p-2 w-full text-white">
+      <button type="submit" className="bg-blue-400 p-2 rounded w-full text-white">
         Add Expense
       </button>
     </form>
