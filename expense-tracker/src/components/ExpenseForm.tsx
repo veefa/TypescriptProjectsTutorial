@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Expense } from "../types";
 import ExpenseList from "./ExpenseList";
+import { BsCalculator } from "react-icons/bs";
 
 interface ExpenseFormProps {
   addExpense: (expense: Expense) => void;
@@ -90,7 +91,7 @@ const ExpenseForm: React.FC<ExpenseFormProps> = ({ addExpense }) => {
 
         {/* Display the Total */}
         <div className="mt-10">
-            <p className="font-semibold text-lg">Total: ${calculateTotal().toFixed(2)}</p>
+           <BsCalculator/> <p className="font-semibold text-lg">Total: ${calculateTotal().toFixed(2)}</p>
         </div>
     </div>
   );
