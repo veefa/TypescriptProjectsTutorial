@@ -42,7 +42,7 @@ const ExpenseForm: React.FC<ExpenseFormProps> = ({ addExpense }) => {
 
   return (
     <div>
-        <form onSubmit={handleSubmit} className="flex flex-wrap items-center gap-2 bg-white shadow-md p-4 rounded-lg">
+        <form onSubmit={handleSubmit} className="flex flex-wrap items-center gap-2 bg-white shadow-md p-4 rounded-lg text-gray-700">
         <div className="w-full">
             <label htmlFor="expense-name" className="block mb-1 font-semibold text-sm">Expense Name</label>
             <input
@@ -91,7 +91,7 @@ const ExpenseForm: React.FC<ExpenseFormProps> = ({ addExpense }) => {
 
         {/* Display the Total */}
         <div className="mt-10">
-           <BsCalculator/> <p className="font-semibold text-lg">Total: ${calculateTotal().toFixed(2)}</p>
+           <BsCalculator/> <p className="bg-gray-100 shadow-md p-2 rounded-md font-bold text-gray-500 text-2xl"> Total: ${calculateTotal().toFixed(2)}</p>
         </div>
     </div>
   );
